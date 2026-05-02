@@ -1,0 +1,69 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ReserveLot {
+  id              String   @id @default(cuid())
+  lbmaReference   String   @unique
+  custodian       String
+  valuationUsd    Decimal  @db.Decimal(20, 2)
+  status          String   @default("ACTIVE")
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model TokenSupply {
+  id              String   @id @default(cuid())
+  outstandingTokens Decimal  @db.Decimal(20, 8)
+  parValue        Decimal  @default(1) @db.Decimal(20, 2)
+  coverageRatio   Decimal  @db.Decimal(20, 8)
+  lastUpdated     DateTime @updatedAt
+}
+
+model AuditEvent {
+  id              String   @id @default(cuid())
+  category        String
+  action          String
+  actor           String
+  role            String
+  beforeState     Json?
+  afterState      Json?
+  hash            String   @unique
+  previousHash    String?
+  timestamp       DateTime @default(now())
+}
+
+model ApprovalRequest {
+  id              String   @id @default(cuid())
+  action          String
+  proposerId      String
+  approverId      String?
+  status          String   @default("PENDING")
+  expiresAt       DateTime
+  createdAt       DateTime @default(now())
+  approvedAt      DateTime?
+}
+
+model Investor {
+  id              String   @id @default(cuid())
+  email           String   @unique
+  name            String
+  kycStatus       String   @default("PENDING")
+  accredited      Boolean  @default(false)
+  holdings        Decimal  @default(0) @db.Decimal(20, 8)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Venue {
+  id              String   @id @default(cuid())
+  name            String
+  active          Boolean  @default(false)
+  spreadPolicy    Json?
+  createdAt       DateTime @default(now())
+}

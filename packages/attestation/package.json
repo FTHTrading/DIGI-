@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/attestation",
+  "version": "1.0.0",
+  "description": "Proof anchoring, custodian attestation chains",
+  "main": "src/index.ts"
+}

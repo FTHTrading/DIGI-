@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/market-ops",
+  "version": "1.0.0",
+  "description": "Market maker governance, OTC desk controls",
+  "main": "src/index.ts"
+}

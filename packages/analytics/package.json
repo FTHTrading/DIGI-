@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/analytics",
+  "version": "1.0.0",
+  "description": "Coverage timelines, issuance summaries",
+  "main": "src/index.ts"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/auth",
+  "version": "1.0.0",
+  "description": "NextAuth session management and access control",
+  "main": "src/index.ts"
+}

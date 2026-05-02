@@ -1,0 +1,8 @@
+{
+  "name": "@dignity/shared-types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types and Zod schemas",
+  "main": "src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "scripts": { "typecheck": "tsc --noEmit" }
+}

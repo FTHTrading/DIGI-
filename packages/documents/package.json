@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/documents",
+  "version": "1.0.0",
+  "description": "Institutional PDF generation (5 documents)",
+  "main": "src/index.ts"
+}

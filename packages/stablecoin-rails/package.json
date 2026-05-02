@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/stablecoin-rails",
+  "version": "1.0.0",
+  "description": "USDC/USDT settlement rail integration",
+  "main": "src/index.ts"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "dignity-institutional-platform",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.29.3",
+  "private": true,
+  "description": "Dignity — Institutional Gold-Backed Digital Securities Operating Platform",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:safe": "pnpm setup:auto && pnpm dev",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "setup:auto": "node scripts/auto-setup.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "db:generate": "pnpm --filter @dignity/db run generate",
+    "db:push": "pnpm --filter @dignity/db run push",
+    "db:migrate": "pnpm --filter @dignity/db run migrate",
+    "db:seed": "pnpm --filter @dignity/db run seed",
+    "db:studio": "pnpm --filter @dignity/db run studio",
+    "db:reset": "pnpm --filter @dignity/db run reset",
+    "check-ports": "node scripts/check-ports.mjs",
+    "validate-env": "node scripts/validate-env.mjs",
+    "bootstrap": "pwsh -File scripts/bootstrap.ps1"
+  },
+  "devDependencies": {
+    "@opennextjs/cloudflare": "^1.19.5",
+    "@types/node": "^20.14.0",
+    "turbo": "^2.3.0",
+    "typescript": "^5.5.0"
+  }
+}

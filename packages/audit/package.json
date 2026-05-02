@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/audit",
+  "version": "1.0.0",
+  "description": "SHA-256 hash-chain AuditEvent engine",
+  "main": "src/index.ts"
+}

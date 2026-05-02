@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/exchange-adapters",
+  "version": "1.0.0",
+  "description": "Venue connectors, spread policy enforcement",
+  "main": "src/index.ts"
+}

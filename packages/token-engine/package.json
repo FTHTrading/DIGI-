@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/token-engine",
+  "version": "1.0.0",
+  "description": "Mint, redeem, burn, transfer restriction enforcement",
+  "main": "src/index.ts"
+}

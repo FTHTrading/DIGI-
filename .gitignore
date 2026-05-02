@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+pnpm-lock.yaml
+
+# Environment
+.env.local
+.env*.local
+.env.production
+
+# Build outputs
+.next/
+dist/
+build/
+.open-next/
+.turbo/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Database
+*.db
+*.sqlite
+postgres_data/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Docker
+docker-compose.local.override.yml
+.docker/

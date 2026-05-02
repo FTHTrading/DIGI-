@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/compliance-engine",
+  "version": "1.0.0",
+  "description": "KYC/AML, Reg D/S accreditation, sanctions screening",
+  "main": "src/index.ts"
+}

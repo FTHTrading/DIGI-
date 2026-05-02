@@ -1,0 +1,25 @@
+{
+  "name": "@dignity/db",
+  "version": "1.0.0",
+  "description": "Prisma ORM, schema, migrations",
+  "main": "src/index.ts",
+  "scripts": {
+    "generate": "prisma generate --schema=src/prisma/schema.prisma",
+    "push": "prisma db push --schema=src/prisma/schema.prisma",
+    "migrate": "prisma migrate deploy --schema=src/prisma/schema.prisma",
+    "reset": "prisma db push --force-reset --schema=src/prisma/schema.prisma",
+    "seed": "tsx src/seed.ts",
+    "studio": "prisma studio --schema=src/prisma/schema.prisma"
+  },
+  "prisma": {
+    "schema": "src/prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.15.0"
+  },
+  "devDependencies": {
+    "prisma": "^5.15.0",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.0"
+  }
+}

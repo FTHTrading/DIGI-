@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/ui",
+  "version": "1.0.0",
+  "description": "Design system — Tailwind + glass-panel components",
+  "main": "src/index.ts"
+}

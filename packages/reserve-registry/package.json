@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/reserve-registry",
+  "version": "1.0.0",
+  "description": "Reserve lot management, coverage ratio, custodian management",
+  "main": "src/index.ts"
+}

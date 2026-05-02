@@ -1,0 +1,6 @@
+{
+  "name": "@dignity/treasury",
+  "version": "1.0.0",
+  "description": "Treasury operations, reserve reporting workflow",
+  "main": "src/index.ts"
+}
